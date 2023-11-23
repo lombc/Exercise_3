@@ -1,0 +1,18 @@
+/*
+    Exercise 3 - 5 Character States
+    - Allow user interaction to change the character's state
+    - Mouse events
+    - Change the character's state based on the user's input
+    - Use the following states: denial, anger, bargaining, depression, acceptance
+    - Scenario:
+        > The user clicks on the character's head
+        > The character's state changes to denial after a couple of clicks
+        > The character's state changes to anger after a couple more clicks
+        > The character's state changes to bargaining after a couple more clicks
+        > The character's state changes to depression after a couple more clicks
+        > The character's state changes to acceptance after a couple more clicks
+        > There's a button that allows the clicks to reset
+            - The character then thanks the user for resetting the clicks
+        
+
+*/
