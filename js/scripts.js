@@ -1,3 +1,4 @@
+/* Initial Facial Expression */
 $("#face-exp").css("background-image", "url('imgs/delighted.svg')");
 $("#face-exp").css("background-size", "contain");
 $("#face-exp").css("background-repeat", "no-repeat");
@@ -16,37 +17,46 @@ $("#face-exp").on("click", function() {
     if(number == 1) {
         console.log("not enough clicks");
     } else if(number == 6) {
+        $("#face-exp").css("transition-timing-function", "ease-in-out");
         $("#face-exp").css("background-image", "url('imgs/denial.svg')");
         $("#face-exp").css("background-size", "contain");
         $("#face-exp").css("background-repeat", "no-repeat");
         $("body").css("background", "#FFCB9E");
     } else if(number == 12) {
+        $("#face-exp").css("transition-timing-function", "ease-in-out");
         $("#face-exp").css("background-image", "url('imgs/anger.svg')");
         $("#face-exp").css("background-size", "contain");
         $("#face-exp").css("background-repeat", "no-repeat");
         $(".wrap").css("animation", "shake 0.5s infinite");
         $("body").css("background", "#FF5349");
     } else if(number == 18) {
+        $("#face-exp").css("transition-timing-function", "ease-in-out");
         $("#face-exp").css("background-image", "url('imgs/bargain.svg')");
         $("#face-exp").css("background-size", "contain");
         $("#face-exp").css("background-repeat", "no-repeat");
-        $(".wrap").css("animation", "none");
+        $(".wrap").css("animation", "kept-shake 0.5s infinite");
         $("body").css("background", "#EAFF9E");
     } else if(number == 20) {
+        $("#face-exp").css("transition-timing-function", "ease-in-out");
         $("#face-exp").css("background-image", "url('imgs/depress.svg')");
         $("#face-exp").css("background-size", "contain");
         $("#face-exp").css("background-repeat", "no-repeat");
+        $(".wrap").css("animation", "kept-shake 0.5s infinite");
         $("body").css("background", "#344675");
     } else if(number == 24) {
+        $("#face-exp").css("transition-timing-function", "ease-in-out");
         $("#face-exp").css("background-image", "url('imgs/acceptance.svg')");
         $("#face-exp").css("background-size", "contain");
         $("#face-exp").css("background-repeat", "no-repeat");
+        $(".wrap").css("animation", "kept-shake 0.5s infinite");
         $("body").css("background", "#3A3F66");
     } else if($("#click-reset").on("click", function() {
+        $("#face-exp").css("transition-timing-function", "ease-in-out");
         /* CoPilot Assistance */
         $("#face-exp").css("background-image", "url('imgs/delighted.svg')");
         $("#face-exp").css("background-size", "contain");
         $("#face-exp").css("background-repeat", "no-repeat");
+        $(".wrap").css("animation", "none");
         $("body").css("background", "azure");
         number = 1;
         console.log('mouseClick = ' + number);
