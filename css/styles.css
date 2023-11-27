@@ -41,11 +41,31 @@ body {
 }
 /* END OF NORMALIZING RULES */
 
-/**/
-.face img {
+/* OTHER IDs */
+#click-reset {
+    margin: 50px auto;
+}
+
+/* OTHER CLASSES */
+.banner {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: normal;
+    font-size: 2.5em;
+}
+
+.msg-prompt {
+    font-family: 'Source Code Pro', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.head {
     width: 500px;
     height: 500px;
+    min-width: 300px;
+    min-height: 300px;
     margin: 0 auto;
     display: block;
     cursor: pointer;
 }
+

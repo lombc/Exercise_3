@@ -1,47 +1,54 @@
+<!--
+    Exercise 3 - 5 Character States
+    - Allow user interaction to change the character's state
+    - Mouse events
+    - Change the character's state based on the user's input
+    - Use the following states: denial, anger, bargaining, depression, acceptance
+    - Starting state: Delight
+    - Scenario:
+        > The user clicks on the character's head
+        > The character's state changes to denial after a couple of clicks
+        > The character's state changes to anger after a couple more clicks
+        > The character's state changes to bargaining after a couple more clicks
+        > The character's state changes to depression after a couple more clicks
+        > The character's state changes to acceptance after a couple more clicks
+        > There's a button that allows the clicks to reset
+            - The character then thanks the user for resetting the clicks
+        
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Exercise 3</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="banner">
         <h1> Five Stages of Grief </h1>
     </header>
+    <section class="msg-prompt">
+        <p>
+            Click on any parts of the face to start....<italics>then continue clicking if you feel like it.</italics>
+        </p>
+    </section>
+    <section class="wrap">
+        <div onClick="mouseClicked()"class="head" id="face-exp"></div>
+    </section>
     <section>
-        <div class="face">
-            <div>
-                <!--Denial-->
-                <img src="imgs/denial.svg" alt="Denial">
-            </div>
-            <div>
-                <!--Anger-->
-                <img src="imgs/anger.svg" alt="Anger">
-            </div>
-            <div>
-                <!--Bargaining-->
-                <img src="imgs/bargain.svg" alt="Bargain">
-            </div>
-            <div>
-                <!--Depression-->
-                <img src="imgs/depress.svg" alt="Depression">
-            </div>
-            <div>
-                <!--Acceptance-->
-                <img src="imgs/acceptance.svg" alt="Depression">
-            </div>
-            <div>
-                <!--Happiness-->
-                <img src="imgs/happiness.svg" alt="Depression">
-            </div>
+        <div id="click-reset">
+            <button><h2>I apologize for my behaviour.</h2></button>
         </div>
     </section>
-
-
-
-<script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
